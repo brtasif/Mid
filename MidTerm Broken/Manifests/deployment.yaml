@@ -8,8 +8,8 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: flask-app
-      app.kubernetes.io/component: greeting
+      app: flask-app    # Updated the selector to match the labels in the template
+      component: greeting    # Updated the selector to match the labels in the template
   template:
     metadata:
       labels:
@@ -21,4 +21,5 @@ spec:
         image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/flask_app:latest
         ports:
         - containerPort: 5000
+
 
