@@ -21,3 +21,4 @@ spec:
         image: 139675527364.dkr.ecr.us-east-1.amazonaws.com/flask_app:latest
         ports:
         - containerPort: 5000
+
